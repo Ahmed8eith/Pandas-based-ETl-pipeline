@@ -1,0 +1,33 @@
+# Pandas-Based ETL Pipeline
+This project is a modular Python pipeline that extracts, transforms, and loads raw CSV data using pandas. It demonstrates the fundamental concepts of ETL (Extract, Transform, Load) and serves as a foundation for more advanced data engineering projects. The pipeline is class-based and designed for maintainability and scalability.
+
+## Features
+- Extract data from CSV files
+- Transform and clean data by removing empty/null/invalid values and converting data types
+- Load processed data back to CSV
+- Modular architecture for maintainability
+- Easy to extend for databases or cloud storage
+
+## Usage
+
+1. **Clone the repository**:
+    clone repo
+    cd pandas_based_etl_pipeline
+
+2. **Create virtual environment**
+    python -m venv venv
+
+3. **Activate the virtual environment:**
+    venv\Scripts\Activate.ps1
+
+4. **Install dependencies:**
+    pip install -r requirements.txt
+
+5. **Configure your source and destination CSV files in config.json:**
+    {
+        "source": "data/raw/dirty_data_demo.csv",
+        "destination": "data/cleaned/cleaned_data_demo.csv"
+    }
+
+6. **Run the pipeline:**
+    python pipeline.py
